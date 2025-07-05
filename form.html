@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mock Application Form</title>
+</head>
+<body>
+  <h2 style="text-align: center;">Mock Application Form</h2>
+
+  <!-- ✅ Formspree setup -->
+  <form action="https://formspree.io/f/mldnkjnk" method="POST">
+
+    Name: <input type="text" name="name" placeholder="Enter Name" required>
+    <br><br>
+
+    Email: <input type="email" name="email" placeholder="Enter Email" required>
+    <br><br>
+
+    Course you want to choose:
+    <br>
+    <input type="radio" value="BCA" name="course" id="c1"> BCA <br>
+    <input type="radio" value="BCV" name="course" id="c2"> BCV <br>
+    <input type="radio" value="BBA" name="course" id="c3"> BBA <br>
+    <input type="radio" value="B.COM" name="course" id="c4"> B.COM <br><br>
+
+    <label for="intro"><strong>Introduce yourself:</strong></label><br>
+    <textarea name="intro" id="intro" placeholder="Introduce yourself" rows="5" cols="40"></textarea>
+    <br><br>
+
+    <label for="city"><strong>City you want to relocate:</strong></label><br>
+    <select name="city" id="city">
+      <option value="Delhi">Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Other">Other</option>
+    </select>
+    <br><br>
+
+    <label for="otherCity">If other, please specify:</label><br>
+    <input type="text" id="otherCity" name="otherCity" placeholder="Type here...">
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+</html>
